@@ -1,0 +1,11 @@
+﻿  Game.cpp
+C:\Users\gcsam\source\repos\Flaps\Flaps\Game.cpp(92,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\gcsam\source\repos\Flaps\Flaps\Game.cpp(92,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
