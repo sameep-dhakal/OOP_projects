@@ -10,7 +10,7 @@ make changes to your repositories and upload/push accordingly
 
 ## steps to clone and change the repositories
 
-### 1.use git clone repository link for eg:git@github.com:sameep-dhakal/Cprogramming_projects.git)
+### 1.use git clone repository link for eg:git@github.com:sameep-dhakal/OOP_projects.git)
 
 ### 2.add your contents on that folder
 
