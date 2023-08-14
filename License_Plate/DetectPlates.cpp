@@ -21,12 +21,12 @@ std::vector<plateHaru> plateHaruKhojne(cv::Mat &ogImage) {
     
     
     
-    std::vector<PossibleChar> vectorOfPossibleCharsInScene = findPossibleCharsInScene(threshImg);
+    std::vector<PossibleChar> charsKoVector = charsKhojne(threshImg);
 
-    std::vector<std::vector<PossibleChar> > vectorOfVectorsOfMatchingCharsInScene = findVectorOfVectorsOfMatchingChars(vectorOfPossibleCharsInScene);
+    std::vector<std::vector<PossibleChar> > charsKoVectorkoVector = charsKoVectorKoVectorKhojne(charsKoVector);
 
 
-    for (auto &vectorOfMatchingChars : vectorOfVectorsOfMatchingCharsInScene) {                    
+    for (auto &vectorOfMatchingChars : charsKoVectorkoVector) {                    
         plateHaru possiblePlate = extractPlate(ogImage, vectorOfMatchingChars);       
 
         if (possiblePlate.plateCrop.empty() == false) {                                            
@@ -40,7 +40,7 @@ std::vector<plateHaru> plateHaruKhojne(cv::Mat &ogImage) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-std::vector<PossibleChar> findPossibleCharsInScene(cv::Mat &threshCrop) {
+std::vector<PossibleChar> charsKhojne(cv::Mat &threshCrop) {
     std::vector<PossibleChar> vectorOfPossibleChars;           
 
     cv::Mat imgContours(threshCrop.size(), CV_8UC3, KALO);

@@ -70,7 +70,7 @@ std::vector<plateHaru> charsHaruKhojne(std::vector<plateHaru> &plateHaruKoVector
 
         std::vector<PossibleChar> vectorOfPossibleCharsInPlate = findPossibleCharsInPlate(possiblePlate.imgGrayscale, possiblePlate.threshCrop);
 
-        std::vector<std::vector<PossibleChar> > vectorOfVectorsOfMatchingCharsInPlate = findVectorOfVectorsOfMatchingChars(vectorOfPossibleCharsInPlate);
+        std::vector<std::vector<PossibleChar> > vectorOfVectorsOfMatchingCharsInPlate = charsKoVectorKoVectorKhojne(vectorOfPossibleCharsInPlate);
 
         if (vectorOfVectorsOfMatchingCharsInPlate.size() == 0) {               
 
@@ -141,7 +141,7 @@ bool checkIfPossibleChar(PossibleChar &possibleChar) {
 }
 
 
-std::vector<std::vector<PossibleChar> > findVectorOfVectorsOfMatchingChars(const std::vector<PossibleChar> &vectorOfPossibleChars) {
+std::vector<std::vector<PossibleChar> > charsKoVectorKoVectorKhojne(const std::vector<PossibleChar> &vectorOfPossibleChars) {
     
 
     std::vector<std::vector<PossibleChar> > vectorOfVectorsOfMatchingChars;             
@@ -172,7 +172,7 @@ std::vector<std::vector<PossibleChar> > findVectorOfVectorsOfMatchingChars(const
         std::vector<std::vector<PossibleChar> > recursiveVectorOfVectorsOfMatchingChars;
 
       
-        recursiveVectorOfVectorsOfMatchingChars = findVectorOfVectorsOfMatchingChars(vectorOfPossibleCharsWithCurrentMatchesRemoved);	
+        recursiveVectorOfVectorsOfMatchingChars = charsKoVectorKoVectorKhojne(vectorOfPossibleCharsWithCurrentMatchesRemoved);	
 
         for (auto &recursiveVectorOfMatchingChars : recursiveVectorOfVectorsOfMatchingChars) {      
             vectorOfVectorsOfMatchingChars.push_back(recursiveVectorOfMatchingChars);              

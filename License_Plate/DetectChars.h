@@ -53,7 +53,7 @@ std::vector<PossibleChar> findPossibleCharsInPlate(cv::Mat &imgGrayscale, cv::Ma
 
 bool checkIfPossibleChar(PossibleChar &possibleChar);
 
-std::vector<std::vector<PossibleChar> > findVectorOfVectorsOfMatchingChars(const std::vector<PossibleChar> &vectorOfPossibleChars);
+std::vector<std::vector<PossibleChar> > charsKoVectorKoVectorKhojne(const std::vector<PossibleChar> &vectorOfPossibleChars);
 
 std::vector<PossibleChar> findVectorOfMatchingChars(const PossibleChar &possibleChar, const std::vector<PossibleChar> &vectorOfChars);
 

@@ -17,7 +17,7 @@ const double PLATE_HEIGHT_PADDING_FACTOR = 1.5;
 // function prototypes ////////////////////////////////////////////////////////////////////////////
 std::vector<plateHaru> plateHaruKhojne(cv::Mat &ogImage);
 
-std::vector<PossibleChar> findPossibleCharsInScene(cv::Mat &threshCrop);
+std::vector<PossibleChar> charsKhojne(cv::Mat &threshCrop);
 
 plateHaru extractPlate(cv::Mat &imgOriginal, 
 	
