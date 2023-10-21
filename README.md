@@ -1,6 +1,6 @@
 # OOP_projects
 
-fork this repo and upload your oop projects here
+This repo contains various OOP projects in C++ programming language which you can take ideas for your college projects
 
 ## steps to fork the repository
 
